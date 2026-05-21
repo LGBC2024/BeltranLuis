@@ -12,34 +12,34 @@ Crea una aplicación Streamlit completa para un proyecto de Machine Learning
 de predicción de precios de casas usando el dataset Ames Housing.
 
 La app debe incluir:
-1. Encabezado con título y subtítulo estilizados usando CSS personalizado.
-2. Una caja con el nombre del estudiante, código ISIL y enlace al Google Colab (solo lectura).
-3. Un formulario lateral con sliders y campos numéricos para ingresar las 10
-   características más importantes del modelo:
-   OverallQual, GrLivArea, GarageCars, TotalBsmtSF, YearBuilt,
-   FullBath, BedroomAbvGr, TotRmsAbvGrd, Fireplaces, LotArea.
+1. Encabezado: "PA2: Fundamentos de Machine Learning" usando CSS personalizado.
+2. Una caja con el nombre del estudiante: "Luis Gabriel Beltrán Cajo"  mail ISIL: "40468984@mail.isil.pe" y enlace al Google Colab (solo lectura).
+3. Se requiere tener campos de ingreso numéricos para:
+    Habitaciones
+    PctBajoStatus
+    RatioEstudiantes
+    TasaCrimen
+    Contaminación
+    Antiguedad
+    DistCentro
+    ImpuestoPropiedad
 4. Un selector para elegir entre dos modelos: Random Forest y Gradient Boosting.
-5. Un botón "Predecir precio" que cargue el modelo .pkl desde la carpeta
+5. Un botón "Predecir precio" que cargue el modelo.pkl desde la carpeta
    'modelos/' usando joblib y muestre el precio estimado en dólares.
-6. Métricas del modelo (R², RMSE, MAE) mostradas como tarjetas.
 7. Un expander con la descripción del dataset y del proyecto.
-8. Diseño profesional con fuentes Google Fonts (Playfair Display + DM Sans),
-   paleta oscura (navy/dorado) y cards estilizadas.
-9. Footer con el nombre del curso e institución.
 
-El archivo debe ser ejecutable con: streamlit run app.py
 Los modelos se cargan desde: modelos/random_forest.pkl y modelos/gradient_boosting.pkl
 """
 
 HERRAMIENTA: Claude Sonnet (claude.ai)
-FECHA: 2025
-CURSO: Machine Learning - ISIL
+FECHA: 2026
+CURSO: Fundamentos de Machine Learning - ISIL
 
 ========================================================
 ESTRUCTURA DEL REPOSITORIO GITHUB
 ========================================================
 
-mi-repo/
+LGBC2024/BeltranLuis/
 ├── app.py                  ← Aplicativo Streamlit
 ├── requirements.txt        ← Dependencias Python
 ├── anotaciones.txt         ← Este archivo (prompt usado)
@@ -47,13 +47,3 @@ mi-repo/
     ├── random_forest.pkl   ← Modelo 1 entrenado
     └── gradient_boosting.pkl ← Modelo 2 entrenado
 
-========================================================
-ENLACE STREAMLIT
-========================================================
-https://[tu-usuario]-houseprice.streamlit.app/
-
-========================================================
-ENLACE GOOGLE COLAB (solo lectura)
-========================================================
-https://colab.research.google.com/drive/[TU_ID_AQUI]
-========================================================
