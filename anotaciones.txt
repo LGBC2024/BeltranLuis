@@ -1,0 +1,59 @@
+========================================================
+  ANOTACIONES DEL PROYECTO - MACHINE LEARNING ISIL 2025
+========================================================
+
+PROMPT UTILIZADO PARA CREAR EL APLICATIVO (app.py)
+----------------------------------------------------
+
+Se utilizó Claude (Anthropic) con el siguiente prompt:
+
+"""
+Crea una aplicación Streamlit completa para un proyecto de Machine Learning
+de predicción de precios de casas usando el dataset Ames Housing.
+
+La app debe incluir:
+1. Encabezado con título y subtítulo estilizados usando CSS personalizado.
+2. Una caja con el nombre del estudiante, código ISIL y enlace al Google Colab (solo lectura).
+3. Un formulario lateral con sliders y campos numéricos para ingresar las 10
+   características más importantes del modelo:
+   OverallQual, GrLivArea, GarageCars, TotalBsmtSF, YearBuilt,
+   FullBath, BedroomAbvGr, TotRmsAbvGrd, Fireplaces, LotArea.
+4. Un selector para elegir entre dos modelos: Random Forest y Gradient Boosting.
+5. Un botón "Predecir precio" que cargue el modelo .pkl desde la carpeta
+   'modelos/' usando joblib y muestre el precio estimado en dólares.
+6. Métricas del modelo (R², RMSE, MAE) mostradas como tarjetas.
+7. Un expander con la descripción del dataset y del proyecto.
+8. Diseño profesional con fuentes Google Fonts (Playfair Display + DM Sans),
+   paleta oscura (navy/dorado) y cards estilizadas.
+9. Footer con el nombre del curso e institución.
+
+El archivo debe ser ejecutable con: streamlit run app.py
+Los modelos se cargan desde: modelos/random_forest.pkl y modelos/gradient_boosting.pkl
+"""
+
+HERRAMIENTA: Claude Sonnet (claude.ai)
+FECHA: 2025
+CURSO: Machine Learning - ISIL
+
+========================================================
+ESTRUCTURA DEL REPOSITORIO GITHUB
+========================================================
+
+mi-repo/
+├── app.py                  ← Aplicativo Streamlit
+├── requirements.txt        ← Dependencias Python
+├── anotaciones.txt         ← Este archivo (prompt usado)
+└── modelos/
+    ├── random_forest.pkl   ← Modelo 1 entrenado
+    └── gradient_boosting.pkl ← Modelo 2 entrenado
+
+========================================================
+ENLACE STREAMLIT
+========================================================
+https://[tu-usuario]-houseprice.streamlit.app/
+
+========================================================
+ENLACE GOOGLE COLAB (solo lectura)
+========================================================
+https://colab.research.google.com/drive/[TU_ID_AQUI]
+========================================================
