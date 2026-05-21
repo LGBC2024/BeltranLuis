@@ -27,6 +27,7 @@ La app debe incluir:
 5. Un botón "Predecir precio" que cargue el modelo.pkl desde la carpeta
    'modelos/' usando joblib y muestre el precio estimado en dólares.
 7. Un expander con la descripción del dataset y del proyecto.
+8. El contenido de su página web debe incluir un enlace a su cuaderno de código COLAB: https://colab.research.google.com/drive/1LDE2zH2K8P1ur7Yxu-Lfb31eRIV_JSaF?usp=sharing (para entrar como lector, es decir, sin permisos de edición), su nombre y código ISIL
 
 Los modelos se cargan desde: modelos/random_forest.pkl y modelos/gradient_boosting.pkl
 """
